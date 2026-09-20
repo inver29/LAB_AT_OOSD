@@ -1,0 +1,29 @@
+## Visual Studio / C# standard .gitignore
+
+# Visual Studio cache & temporary files
+.vs/
+*.user
+*.userosscache
+*.sln.docstates
+*.suo
+
+# Build results (thư mục đầu ra khi biên dịch)
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Bb]in/
+[Ob]j/
+
+# Visual Studio Code / JetBrains / Rider (nếu có dùng)
+.vscode/
+.idea/
+
+# OS generated files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store
