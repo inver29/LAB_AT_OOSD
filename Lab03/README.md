@@ -31,6 +31,7 @@ BÀI LAB 3: HỆ THỐNG QUẢN LÝ KHÁCH SẠN
 		Lỗi scale giao diện chưa được tối ưu và còn bị che nội dung ở một số chỗ.
 
 5. Hướng dẫn chạy chương trình
+
 	Bước 1: Khởi tạo Cơ sở dữ liệu
 
 		Mở SQL Server.
