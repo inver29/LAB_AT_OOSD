@@ -9,10 +9,10 @@ GO
 -- BÀI 5 - QUẢN LÝ HỒ SƠ BỆNH ÁN
 -- SQL Server. Chạy trên cơ sở dữ liệu mới, không chạy lại trên bảng đã có.
 -- Tạo CSDL rồi chọn đúng CSDL trước khi chạy các phần tiếp theo.
-IF DB_ID(N'Bai05_AppTest_f6b052798f4a') IS NULL
-    CREATE DATABASE Bai05_AppTest_f6b052798f4a;
+IF DB_ID(N'QuanLyHoSoBenhAn_Bai05') IS NULL
+    CREATE DATABASE QuanLyHoSoBenhAn_Bai05;
 GO
-USE Bai05_AppTest_f6b052798f4a;
+USE QuanLyHoSoBenhAn_Bai05;
 GO
 
 -- 1. Bệnh nhân
