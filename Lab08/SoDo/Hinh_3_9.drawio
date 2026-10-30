@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" type="device">
+  <diagram id="Hinh_3_9" name="Hình 3.9: Biểu Đồ Hoạt Động (Câu 5)">
+    <mxGraphModel dx="1200" dy="800" grid="0" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1120" pageHeight="840" background="#ffffff">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        
+    <!-- Swimlanes -->
+    <mxCell id="lane1" value="Khách hàng thuê" style="swimlane;html=1;startSize=30;horizontal=1;fillColor=none;strokeColor=#000000;strokeWidth=1.3;fontFamily=Times New Roman;fontSize=15;fontStyle=1;" vertex="1" parent="1">
+      <mxGeometry x="40" y="55" width="320" height="770" as="geometry"/>
+    </mxCell>
+    <mxCell id="lane2" value="Ban quản lý tòa nhà" style="swimlane;html=1;startSize=30;horizontal=1;fillColor=none;strokeColor=#000000;strokeWidth=1.3;fontFamily=Times New Roman;fontSize=15;fontStyle=1;" vertex="1" parent="1">
+      <mxGeometry x="360" y="55" width="360" height="770" as="geometry"/>
+    </mxCell>
+    <mxCell id="lane3" value="Kế toán cao ốc" style="swimlane;html=1;startSize=30;horizontal=1;fillColor=none;strokeColor=#000000;strokeWidth=1.3;fontFamily=Times New Roman;fontSize=15;fontStyle=1;" vertex="1" parent="1">
+      <mxGeometry x="720" y="55" width="360" height="770" as="geometry"/>
+    </mxCell>
+    
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

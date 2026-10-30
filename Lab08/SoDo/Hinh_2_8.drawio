@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" type="device">
+  <diagram id="Hinh_2_8" name="Hình 2.8: Biểu Đồ Lớp Phân Tích (Câu 1 & 2)">
+    <mxGraphModel dx="1200" dy="800" grid="0" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1250" pageHeight="920" background="#ffffff">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        
+    <!-- Tang -->
+    <mxCell id="c_tang" value="&lt;b&gt;Tang (Tầng)&lt;/b&gt;&lt;hr&gt;+ maTang: string [ID]&lt;br&gt;+ tenTang: string&lt;br&gt;+ soLuongPhong: int&lt;hr&gt;+ themPhong()&lt;br&gt;+ capNhat()" style="shape=rectangle;rounded=0;html=1;whiteSpace=wrap;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.3;fontFamily=Times New Roman;fontSize=13;align=left;spacing=6;" vertex="1" parent="1">
+      <mxGeometry x="40" y="70" width="220" height="140" as="geometry"/>
+    </mxCell>
+    <!-- Phong -->
+    <mxCell id="c_phong" value="&lt;b&gt;Phong (Phòng VP)&lt;/b&gt;&lt;hr&gt;+ maPhong: string [ID]&lt;br&gt;+ dienTich: double&lt;br&gt;+ huong: string&lt;br&gt;+ donGiaThue: decimal&lt;br&gt;+ trangThai: string&lt;hr&gt;+ tinhGiaThue(): decimal&lt;br&gt;+ capNhatTrangThai()" style="shape=rectangle;rounded=0;html=1;whiteSpace=wrap;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.3;fontFamily=Times New Roman;fontSize=13;align=left;spacing=6;" vertex="1" parent="1">
+      <mxGeometry x="350" y="70" width="250" height="180" as="geometry"/>
+    </mxCell>
+    <!-- KhachHang -->
+    <mxCell id="c_kh" value="&lt;b&gt;KhachHang (Công ty)&lt;/b&gt;&lt;hr&gt;+ maKH: string [ID]&lt;br&gt;+ tenCongTy: string&lt;br&gt;+ nguoiDaiDien: string&lt;br&gt;+ soDienThoai: string&lt;br&gt;+ maSoThue: string&lt;hr&gt;+ dangKyThue()&lt;br&gt;+ baoCaoNV()" style="shape=rectangle;rounded=0;html=1;whiteSpace=wrap;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.3;fontFamily=Times New Roman;fontSize=13;align=left;spacing=6;" vertex="1" parent="1">
+      <mxGeometry x="950" y="70" width="250" height="170" as="geometry"/>
+    </mxCell>
+    <!-- HopDong -->
+    <mxCell id="c_hd" value="&lt;b&gt;HopDong (Hợp đồng)&lt;/b&gt;&lt;hr&gt;+ soHD: string [ID]&lt;br&gt;+ ngayKy: date&lt;br&gt;+ thoiHanThue: int (&amp;gt;= 6)&lt;br&gt;+ ngayBatDau, ngayKetThuc: date&lt;br&gt;+ tienCoc: decimal&lt;br&gt;+ trangThai: string&lt;hr&gt;+ tinhTien6ThangDau(): decimal&lt;br&gt;+ kiemTraHetHan(): bool" style="shape=rectangle;rounded=0;html=1;whiteSpace=wrap;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.3;fontFamily=Times New Roman;fontSize=13;align=left;spacing=6;" vertex="1" parent="1">
+      <mxGeometry x="650" y="320" width="260" height="200" as="geometry"/>
+    </mxCell>
+    <!-- ChiTietHopDong -->
+    <mxCell id="c_cthd" value="&lt;b&gt;ChiTietHopDong&lt;/b&gt;&lt;hr&gt;+ soHD: string [ID, FK]&lt;br&gt;+ maPhong: string [ID, FK]&lt;br&gt;+ donGiaThueThucTe: decimal&lt;hr&gt;+ tinhTienPhong(): decimal" style="shape=rectangle;rounded=0;html=1;whiteSpace=wrap;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.3;fontFamily=Times New Roman;fontSize=13;align=left;spacing=6;" vertex="1" parent="1">
+      <mxGeometry x="350" y="340" width="220" height="140" as="geometry"/>
+    </mxCell>
+    <!-- PhieuGiaHan -->
+    <mxCell id="c_pgh" value="&lt;b&gt;PhieuGiaHan (Gia hạn)&lt;/b&gt;&lt;hr&gt;+ soPGH: string [ID]&lt;br&gt;+ soHD: string [FK]&lt;br&gt;+ thoiGianGiaHan: int (&amp;lt;= ½ T_gốc)&lt;br&gt;+ ngayGiaHan: date&lt;hr&gt;+ kiemTraDieuKienGiaHan(): bool&lt;br&gt;+ capNhatHanHopDong()" style="shape=rectangle;rounded=0;html=1;whiteSpace=wrap;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.3;fontFamily=Times New Roman;fontSize=13;align=left;spacing=6;" vertex="1" parent="1">
+      <mxGeometry x="960" y="340" width="250" height="160" as="geometry"/>
+    </mxCell>
+    <!-- HoaDonTienThue -->
+    <mxCell id="c_hdthue" value="&lt;b&gt;HoaDonTienThue&lt;/b&gt;&lt;hr&gt;+ maHDThue: string [ID]&lt;br&gt;+ soHD: string [FK]&lt;br&gt;+ thangNam: string, soTien: decimal&lt;br&gt;+ ngayThu, trangThai: string&lt;hr&gt;+ xacNhanThanhToan()&lt;br&gt;+ kiemTraNoTienThue(): bool" style="shape=rectangle;rounded=0;html=1;whiteSpace=wrap;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.3;fontFamily=Times New Roman;fontSize=13;align=left;spacing=6;" vertex="1" parent="1">
+      <mxGeometry x="650" y="590" width="250" height="150" as="geometry"/>
+    </mxCell>
+    <!-- DichVu -->
+    <mxCell id="c_dv" value="&lt;b&gt;DichVu&lt;/b&gt;&lt;hr&gt;+ maDV: string [ID]&lt;br&gt;+ tenDV, donViTinh: string&lt;br&gt;+ donGia: decimal&lt;hr&gt;+ capNhatDonGia()" style="shape=rectangle;rounded=0;html=1;whiteSpace=wrap;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.3;fontFamily=Times New Roman;fontSize=13;align=left;spacing=6;" vertex="1" parent="1">
+      <mxGeometry x="40" y="570" width="230" height="140" as="geometry"/>
+    </mxCell>
+    <!-- ChiTietSuDungDichVu -->
+    <mxCell id="c_ctsddv" value="&lt;b&gt;ChiTietSuDungDichVu&lt;/b&gt;&lt;hr&gt;+ maPhong, maDV: string [ID, FK]&lt;br&gt;+ thangNam: string [ID]&lt;br&gt;+ chiSoCu, chiSoMoi: double&lt;br&gt;+ soLuongDung, thanhTien: decimal&lt;hr&gt;+ tinhTienDichVu(): decimal" style="shape=rectangle;rounded=0;html=1;whiteSpace=wrap;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.3;fontFamily=Times New Roman;fontSize=13;align=left;spacing=6;" vertex="1" parent="1">
+      <mxGeometry x="340" y="570" width="240" height="150" as="geometry"/>
+    </mxCell>
+    <!-- HoaDonDichVu -->
+    <mxCell id="c_hddv" value="&lt;b&gt;HoaDonDichVu&lt;/b&gt;&lt;hr&gt;+ maHDDV: string [ID]&lt;br&gt;+ soHD: string [FK], thangNam: string&lt;br&gt;+ tongTien: decimal, trangThai: string&lt;hr&gt;+ kiemTraNoDichVu(): bool" style="shape=rectangle;rounded=0;html=1;whiteSpace=wrap;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.3;fontFamily=Times New Roman;fontSize=13;align=left;spacing=6;" vertex="1" parent="1">
+      <mxGeometry x="340" y="760" width="240" height="140" as="geometry"/>
+    </mxCell>
+    <!-- NhanVienCongTy -->
+    <mxCell id="c_nv" value="&lt;b&gt;NhanVienCongTy&lt;/b&gt;&lt;hr&gt;+ maNV: string [ID]&lt;br&gt;+ hoTen, chucVu: string&lt;br&gt;+ maKH: string [FK], maPhong: string [FK]&lt;br&gt;+ hinhAnh: byte[]&lt;hr&gt;+ baoCaoMoi()&lt;br&gt;+ nghiViec()" style="shape=rectangle;rounded=0;html=1;whiteSpace=wrap;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.3;fontFamily=Times New Roman;fontSize=13;align=left;spacing=6;" vertex="1" parent="1">
+      <mxGeometry x="960" y="550" width="250" height="160" as="geometry"/>
+    </mxCell>
+    <!-- TheGiuXe -->
+    <mxCell id="c_thexe" value="&lt;b&gt;TheGiuXe&lt;/b&gt;&lt;hr&gt;+ maThe: string [ID]&lt;br&gt;+ maNV: string [FK]&lt;br&gt;+ bienSoXe, loaiXe: string&lt;br&gt;+ trangThai: string&lt;hr&gt;+ capThe()&lt;br&gt;+ khoaThe()" style="shape=rectangle;rounded=0;html=1;whiteSpace=wrap;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.3;fontFamily=Times New Roman;fontSize=13;align=left;spacing=6;" vertex="1" parent="1">
+      <mxGeometry x="960" y="745" width="250" height="150" as="geometry"/>
+    </mxCell>
+    <!-- KiemTraPhong -->
+    <mxCell id="c_ktp" value="&lt;b&gt;KiemTraPhong&lt;/b&gt;&lt;hr&gt;+ maDotKT: string [ID]&lt;br&gt;+ maPhong: string [FK], ngayKT: date&lt;br&gt;+ tinhTrang, ketLuanTuSua: string&lt;hr&gt;+ lapBienBanKT()" style="shape=rectangle;rounded=0;html=1;whiteSpace=wrap;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.3;fontFamily=Times New Roman;fontSize=13;align=left;spacing=6;" vertex="1" parent="1">
+      <mxGeometry x="40" y="250" width="230" height="130" as="geometry"/>
+    </mxCell>
+    <!-- BienBanViPham -->
+    <mxCell id="c_bbvp" value="&lt;b&gt;BienBanViPham&lt;/b&gt;&lt;hr&gt;+ maBB: string [ID]&lt;br&gt;+ maPhong: string [FK], ngayLap: date&lt;br&gt;+ hanhViViPham, tienPhat: decimal&lt;hr&gt;+ xuPhatViPham()" style="shape=rectangle;rounded=0;html=1;whiteSpace=wrap;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.3;fontFamily=Times New Roman;fontSize=13;align=left;spacing=6;" vertex="1" parent="1">
+      <mxGeometry x="40" y="410" width="230" height="130" as="geometry"/>
+    </mxCell>
+    
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

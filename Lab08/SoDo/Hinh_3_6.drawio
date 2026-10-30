@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" type="device">
+  <diagram id="Hinh_3_6" name="Hình 3.6: Biểu Đồ Lớp Thiết Kế Chi Tiết">
+    <mxGraphModel dx="1200" dy="800" grid="0" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="780" background="#ffffff">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        
+    <mxCell id="pkg1" value="TẦNG GIAO DIỆN (UI / FORMS)" style="shape=folder;fontStyle=1;tabWidth=180;tabHeight=25;tabPosition=left;html=1;whiteSpace=wrap;fillColor=none;strokeColor=#000000;strokeWidth=1.3;fontFamily=Times New Roman;fontSize=14;" vertex="1" parent="1">
+      <mxGeometry x="40" y="70" width="300" height="670" as="geometry"/>
+    </mxCell>
+    <mxCell id="pkg2" value="TẦNG NGHIỆP VỤ (BLL / CONTROLLER)" style="shape=folder;fontStyle=1;tabWidth=200;tabHeight=25;tabPosition=left;html=1;whiteSpace=wrap;fillColor=none;strokeColor=#000000;strokeWidth=1.3;fontFamily=Times New Roman;fontSize=14;" vertex="1" parent="1">
+      <mxGeometry x="390" y="70" width="320" height="670" as="geometry"/>
+    </mxCell>
+    <mxCell id="pkg3" value="TẦNG DỮ LIỆU (DAL / ENTITIES)" style="shape=folder;fontStyle=1;tabWidth=180;tabHeight=25;tabPosition=left;html=1;whiteSpace=wrap;fillColor=none;strokeColor=#000000;strokeWidth=1.3;fontFamily=Times New Roman;fontSize=14;" vertex="1" parent="1">
+      <mxGeometry x="760" y="70" width="300" height="670" as="geometry"/>
+    </mxCell>
+    
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
