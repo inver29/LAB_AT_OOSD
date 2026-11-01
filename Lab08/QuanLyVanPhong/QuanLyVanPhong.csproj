@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+ <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+ <PropertyGroup><Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration><Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform><ProjectGuid>{30DB2AAF-B4A5-4B6B-8F17-C93FDE0A9C42}</ProjectGuid><OutputType>WinExe</OutputType><RootNamespace>QuanLyVanPhong</RootNamespace><AssemblyName>QuanLyVanPhong</AssemblyName><TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion><AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects><Deterministic>true</Deterministic><LangVersion>7.3</LangVersion></PropertyGroup>
+ <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' "><PlatformTarget>AnyCPU</PlatformTarget><DebugSymbols>true</DebugSymbols><DebugType>full</DebugType><Optimize>false</Optimize><OutputPath>bin\Debug\</OutputPath><DefineConstants>DEBUG;TRACE</DefineConstants><WarningLevel>4</WarningLevel></PropertyGroup>
+ <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' "><PlatformTarget>AnyCPU</PlatformTarget><DebugType>pdbonly</DebugType><Optimize>true</Optimize><OutputPath>bin\Release\</OutputPath><DefineConstants>TRACE</DefineConstants><WarningLevel>4</WarningLevel></PropertyGroup>
+ <ItemGroup>
+  <Reference Include="System" /><Reference Include="System.Core" /><Reference Include="System.Configuration" /><Reference Include="System.Data" /><Reference Include="System.Data.DataSetExtensions" /><Reference Include="System.Drawing" /><Reference Include="System.Windows.Forms" /><Reference Include="System.Xml" />
+ </ItemGroup>
+ <ItemGroup>
+    <Compile Include="Common\Session.cs" />
+    <Compile Include="Data\Db.cs" />
+    <Compile Include="Forms\FrmDanhMuc.cs"><SubType>Form</SubType></Compile>
+    <Compile Include="Forms\FrmDanhMuc.Designer.cs"><DependentUpon>FrmDanhMuc.cs</DependentUpon></Compile>
+    <Compile Include="Forms\FrmGiaHan.cs"><SubType>Form</SubType></Compile>
+    <Compile Include="Forms\FrmGiaHan.Designer.cs"><DependentUpon>FrmGiaHan.cs</DependentUpon></Compile>
+    <Compile Include="Forms\FrmHoaDon.cs"><SubType>Form</SubType></Compile>
+    <Compile Include="Forms\FrmHoaDon.Designer.cs"><DependentUpon>FrmHoaDon.cs</DependentUpon></Compile>
+    <Compile Include="Forms\FrmHopDong.cs"><SubType>Form</SubType></Compile>
+    <Compile Include="Forms\FrmHopDong.Designer.cs"><DependentUpon>FrmHopDong.cs</DependentUpon></Compile>
+    <Compile Include="Forms\FrmKiemTra.cs"><SubType>Form</SubType></Compile>
+    <Compile Include="Forms\FrmKiemTra.Designer.cs"><DependentUpon>FrmKiemTra.cs</DependentUpon></Compile>
+    <Compile Include="Forms\FrmMain.cs"><SubType>Form</SubType></Compile>
+    <Compile Include="Forms\FrmMain.Designer.cs"><DependentUpon>FrmMain.cs</DependentUpon></Compile>
+    <Compile Include="Forms\FrmNhanVienTheXe.cs"><SubType>Form</SubType></Compile>
+    <Compile Include="Forms\FrmNhanVienTheXe.Designer.cs"><DependentUpon>FrmNhanVienTheXe.cs</DependentUpon></Compile>
+    <Compile Include="Forms\Ui.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Services\DanhMucService.cs" />
+    <Compile Include="Services\GiaHanService.cs" />
+    <Compile Include="Services\HoaDonService.cs" />
+    <Compile Include="Services\HopDongService.cs" />
+    <Compile Include="Services\KiemTraService.cs" />
+    <Compile Include="Services\NhanVienTheXeService.cs" />
+    <Compile Include="Services\Rules.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+ </ItemGroup>
+ <ItemGroup><None Include="App.config" /><Content Include="Assets\nhan_vien_mau.png"><CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory></Content></ItemGroup>
+ <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
